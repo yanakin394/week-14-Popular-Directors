@@ -4,6 +4,7 @@
     background-color: rgb(174, 134, 212);
 }
 .title {
+    margin-top: 0%;
     padding-top: 2%;
     font-size: 36px;
 }
@@ -21,16 +22,26 @@
     padding-bottom: 1%;
     margin-left: 5%;
     margin-right: 5%;
-/*     display: grid;
-    grid-template-areas: "director_item_title director_item_title director_item_title"
-        "career link link"; */
+    display: grid;
+    grid-template-areas: "director_item_title director_item_title"
+        "career link";
+}
+.director_item_title {
+    grid-area: director_item_title;
+}
+.career {
+    color: white;
+    grid-area: career;
+    align-self: center;
+}
+.link {
+    grid-area: link;
+    align-self: center;
+    justify-self: flex-end;
 }
 .director_item_title{
     font-size: 24px;
     font-weight: bolder;
-}
-.career {
-    color: white;
 }
 .best_movies_list {
     font-size: larger;
