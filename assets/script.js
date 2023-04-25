@@ -45,16 +45,18 @@ const directorsArr = [
 ];
 
 //выбираю элемент html, куда нужно поместить данные о режиссерах
-let directorsContainer = document.querySelector("directors_container");
+let directorsContainer = document.querySelector(".directors_container");
 
 //вызываю метод forEach у массива
 directorsArr.forEach ((item) => {
     const directorItem = document.createElement("div");     // создаю элемент див чтобы поместить элементы массива
+    directorItem.className = 'director_item_wrapper';       // добавляю класс для стилей
     directorItem.innerHTML = `
-        <h2>${item.name}</h2>
-        <p>${item.career}</p>
-        <a href="${item.films}" target="blank"}">Фильмография</a>`;
+        <p class="director_item_title">${item.name}</p>
+        <p class="career">${item.career}</p>
+        <a class="link" href="${item.films}" target="_blank">Фильмография</a>`;
     
+
 // добавляю элементу в контейнер
     directorsContainer.appendChild(directorItem);
 });
