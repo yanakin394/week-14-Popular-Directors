@@ -44,9 +44,25 @@ const directorsArr = [
     },
 ];
 
+//выбираю элемент html, куда нужно поместить данные о режиссерах
+let directorsContainer = document.querySelector("directors_container");
+
+//вызываю метод forEach у массива
+directorsArr.forEach (item) => {
+    const directorItem = document.createElement("div");     // создаю элемент див чтобы поместить элементы массива
+    directorItem.innerHTML = `
+        <h2>${item.name}</h2>
+        <p>${item.career}</p>
+        <a href="${item.films target="blank"}">Фильмография</a>`;
+    
+// добавляю элементу в контейнер
+    directorsContainer.appendChild(directorItem);
+}
+
 //выбираю элемент html, куда нужно поместить данные о лучших фильмах
 let containerForBestMovies = document.querySelector(".movie_list");
 
+//создаю переменную для извлечения элементов из массива
 let topMovieList = directorsArr.map(function (elem) {
     const listMovie = document.createElement("span");   // создаю html элемент, куда будет помещаться информация о фильмах
     listMovie.innerHTML =                               // прописываю html разметку

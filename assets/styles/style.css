@@ -5,9 +5,7 @@
     background-color: rgb(174, 134, 212);
 }
 .title,
-.best_films_title {
-    text-align: center;
-}
-.best_movies_list{
+.best_films_title,
+.movie_list {
     text-align: center;
 }
