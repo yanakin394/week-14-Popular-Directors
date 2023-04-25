@@ -5,6 +5,7 @@
 }
 .title {
     padding-top: 2%;
+    font-size: 36px;
 }
 .title,
 .best_films_title,
@@ -16,9 +17,10 @@
     padding-bottom: 5%;
 }
 .director_item_wrapper {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid black;
     padding-bottom: 1%;
     margin-left: 5%;
+    margin-right: 5%;
 /*     display: grid;
     grid-template-areas: "director_item_title director_item_title director_item_title"
         "career link link"; */
@@ -26,4 +28,14 @@
 .director_item_title{
     font-size: 24px;
     font-weight: bolder;
+}
+.career {
+    color: white;
+}
+.best_movies_list {
+    font-size: larger;
+    font-weight: bolder;
+}
+.best_films_title {
+    font-size: 36px;
 }

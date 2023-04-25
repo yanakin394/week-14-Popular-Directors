@@ -54,7 +54,7 @@ directorsArr.forEach ((item) => {
     directorItem.innerHTML = `
         <p class="director_item_title">${item.name}</p>
         <p class="career">${item.career}</p>
-        <a class="link" href="${item.films}" target="_blank">Фильмография</a>`;
+        <a  style="color: black;" class="link" href="${item.films}" target="_blank">Фильмография</a>`;
     
 
 // добавляю элементу в контейнер
